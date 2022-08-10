@@ -5,6 +5,18 @@ The majority of accidents happen due to the drowsiness of the driver. So, to pre
 
 ![image](https://user-images.githubusercontent.com/64821137/184025929-40d85261-4e3c-4c80-9485-e9624feae1ac.png)
 
+## Detection Approach
+
+* Step 1 – Take image as input from a camera.
+
+* Step 2 – Detect the face in the image and create a Region of Interest (ROI).
+
+* Step 3 – Detect the eyes from ROI and feed it to the classifier.
+
+* Step 4 – Classifier will categorize whether eyes are open or closed.
+
+* Step 5 – Calculate score to check whether the person is drowsy.
+
 ## What are Haar Cascades? 
 
 Haar Cascade is a machine learning-based approach where a lot of positive and negative images are used to train the classifier. 
@@ -24,15 +36,3 @@ The CNN model architecture consists of the following layers:
 * Convolutional layer; 64 nodes, kernel size 3
 * Fully connected layer; 128 nodes
 * The final layer is also a fully connected layer with 2 nodes. A Relu activation function is used in all the layers except the output layer in which we used Softmax.
-
-## Detection Approach
-
-* Step 1 – Take image as input from a camera.
-
-* Step 2 – Detect the face in the image and create a Region of Interest (ROI).
-
-* Step 3 – Detect the eyes from ROI and feed it to the classifier.
-
-* Step 4 – Classifier will categorize whether eyes are open or closed.
-
-* Step 5 – Calculate score to check whether the person is drowsy.
